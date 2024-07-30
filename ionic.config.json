@@ -1,0 +1,7 @@
+{
+  "name": "Vanilla_Ionic_2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
