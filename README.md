@@ -1,6 +1,3 @@
-
-
-
 **Build Instructions**
 -
 
@@ -58,4 +55,4 @@ bootstrap:19 OPFS syncer: Error initializing OPFS asyncer:
 ErrorEvent {isTrusted: true, message: 'Uncaught ReferenceError: require is not defined', filename: 'file:///C:/Users/srinidhi/Documents/Vanilla_Ionic_2/platforms/electron/www/4270.bc9b09e757c4ca57.js', lineno: 1, colno: 28, …}
 ```
 
-
+![Electron App Error](Electron-app-error-information.PNG)
