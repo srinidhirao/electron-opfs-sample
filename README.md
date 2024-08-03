@@ -57,3 +57,12 @@ ErrorEvent {isTrusted: true, message: 'Uncaught ReferenceError: require is not d
 ```
 
 ![Electron App Error](Electron-app-error-information.PNG)
+
+If you inspect the error, you can see that this file: `sqlite3-opfs-async-proxy.js` has been
+transformed into xxxx.xxxx.js file with a require statement at the top.
+
+```
+ var L, l = require("C:/../../../../node_modules/@babel/runtime/helpers/asyncToGenerator.js").default;
+``` 
+
+This package which I'm tryinbg to integrate [sqlite-wasm](https://github.com/sqlite/sqlite-wasm/tree/main) actually produces a ESM module. It seems like the ionic cordova electron stack seems to be transpiling the JS code to CommonJS module syntax which might be causing an issue while trying to access from the browser front end application.
