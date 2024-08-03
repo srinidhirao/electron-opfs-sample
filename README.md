@@ -26,7 +26,7 @@ app.on('ready', () => {
     });
 });
 ```
-Include a reference for session in the top level imports:
+Include a reference for `session` in the top level imports:
 
 ```
 const {
@@ -46,6 +46,7 @@ $ ionic cordova run electron --no-build --source-map
 ```
 
 **Test Instructions**
+-
 1. Launch the app.
 2. App provides two option to test OPFS. Foreground / Background (using workers)
 3. Selecting either option results in an exception which gets printed to the console.
